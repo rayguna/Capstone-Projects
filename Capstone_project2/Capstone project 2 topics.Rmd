@@ -2,12 +2,8 @@
 title: "Capstone project 2 topics"
 author: "Ray Gunawidjaja"
 date: "March 14, 2018"
-output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 #### Topic 1: Automated literature review and experimental design using NLP, regex, and machine learning algorithms
 
