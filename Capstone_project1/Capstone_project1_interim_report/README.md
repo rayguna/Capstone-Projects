@@ -85,7 +85,6 @@ Please refer to **Appendix A** for the definition of the various technical termi
 - The final model is expected to be able to extract the functional groups that are present in an unknown IR spectrum with a high accuracy.   
 </p>
 
-[//]: # ![](data/Fig 2.1. Flowchart.png)  
 <img src="data/Fig 2.1. Flowchart.png" width="400"><br>
 **Figure 2.1.** A flowchart summarizing the processess carried out in this work.
 
@@ -100,7 +99,7 @@ import pandas as pd
 #load NIST_chemicals_list.csv and inspect
 pd.read_csv('data/NIST_chemicals_list.csv', names=['Name','Formula', 'CAS']).head() 
 ```
-![](data/Table 1.png) 
+<img src="data/Table 1.png"><br>
 <br>
 
 <p align="justify">
@@ -125,7 +124,8 @@ The data wrangling step yields a shortened chemicals list with two additional co
 #load NIST chemicals_list_organic.csv and inspect
 pd.read_csv('data/NIST_chemicals_list_organic.csv').head() 
 ```
-![](data/Table 2.png) 
+<img src="data/Table 2.png"><br>
+
 <br>
 
 <p align="justify">
@@ -152,8 +152,8 @@ In most cases, little linear correlation is seen between spectra within the same
 ```python
 pd.read_csv('data/NIST_selected_organic_spectra.csv').head()
 ```
-
-![](data/Table 3.png) 
+ 
+<img src="data/Table 3.png"><br>
 <br>
 
 ### 3.  Machine learning approach
