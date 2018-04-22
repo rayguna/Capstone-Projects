@@ -11,13 +11,15 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ***
 
-**Table of contents** 
+#### Table of contents <br>  
 
-1. Problem Statement
-2. Overview of Approach and Data Preparation
-3. Machine Learning
-4. Deep Learning
-5. Summary and Next Steps
+**Abstract**  
+
+1. Problem Statement      
+2. Overview of Approach and Data Preparation      
+3. Machine Learning  
+4. Deep Learning    
+5. Summary and Next Steps    
 
 **Appendix A. Data Preparation**<br>
 **Appendix B. Machine Learning Model**<br>
@@ -27,7 +29,13 @@ knitr::opts_chunk$set(echo = TRUE)
 ***
 <br>
 
-#### 1. Introduction
+**Abstract** <br>   
+Without a robust inventory management system in place, it is easy for items to be misplaced, mislabeled, stolen, etc. This, in turns, will result in financial losses in a business. I propose to use machine learning and deep learning models to automate and eliminate error in keeping track of inventory. Three approaches are explored in this work: (1) a combination of histogram oriented gradient (HOG) and support vector machine, (2) a simple neural network and convolutional neural network, and (3) a pretrained VGG model. The codes that I use are adapted from various references that are cited herein. All three approaches involve two major steps: (1) distinct features are extracted from labeled image (i.e., extraction) and (2) the distinct features are correlated to the assigned labels. The model with the best accuracy is selected and combined with an object detection algorithm. Finally, using the combination of an object recognition and an object detection algorithm, we can label and count objects in a picture. The VGG model and the final step will be presented in the upcoming final report.        
+
+<br>
+
+#### 1. Introduction <br>  
+
 **Problem statement **<br>
 *What is the problem you want to solve?*<br>
 Having an efficient and error-proof inventory management system is central to every business. Poor inventory management system will result in financial losses due to items being misplaced, mislabeled, stolen, etc.   
@@ -180,6 +188,7 @@ plt.show()
 ```
 
 <img src="Figures/Fig4-3_Floss.png"><br>
+**Figure 3.2.** The test image showing a picture of a floss.<br>
 
 ```{}
 from keras.models import load_model
@@ -209,10 +218,6 @@ Please refer to **Appendix C** for details.<br>
 <br>
 <br>
 
-**References** <br>
-1. Rajalingappaa Shanmugamani, "Deep Learning for Computer Vision", Packt 2018, Chpt. 2: Augmentation techniques. <br>
-2. Gabriel Garrido and Prateek Joshi, "OpenCV 3.x with Python By Example", Packt, 2018, Chpt. 9. <br>
-<br>
 
 **Appendix A. Data Preparation**<br>
 As a part of the data preparation, labeled training images are standardized in terms of its orientation and dimensions. The number of dataset is increased by augmentation. The data is then saved into a csv file for later retrieval. <br>
