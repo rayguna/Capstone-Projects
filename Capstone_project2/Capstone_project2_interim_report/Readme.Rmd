@@ -9,8 +9,7 @@ output: html_document
 
 #### Table of contents <br>  
 
-**Abstract**  
-
+Abstract    
 1. Problem Statement      
 2. Overview of Approach and Data Preparation      
 3. Machine Learning  
@@ -154,19 +153,24 @@ As an alternative to the HOG-SVM method, I correlate directly each image to its 
 
 **Figure 4.1** below shows the accuracy graph of the NN model during training. Note that the accuracy levels off at 90%. <br>
 
-<img src="Figures/Fig4-1a_NN_model_accuracy.png">
+(a)<br>
+<img src="Figures/Fig4-1a_NN_model_accuracy.png"><br>
+(b)<br>
 <img src="Figures/Fig4-1b_NN_model_loss.png"><br>
-**Figure 4.1.** Plots of: (a) model accuracy and (b) model loss corresponding to the NN model.
+**Figure 4.1.** Plots of: (a) model accuracy and (b) model loss corresponding to the NN model.<br>
 <br>
 
-**Figure 4.2** below shows the accuracy graph of the CNN model during training. Note that the accuracy levels off at 96%. <br>
+**Figure 4.2** below shows the accuracy graph of the CNN model during training. Note that the accuracy levels off at 96%. <br>  
+<br>
 
-<img src="Figures/Fig4-2a_NN_model_accuracy.png">
+(a)<br>
+<img src="Figures/Fig4-2a_NN_model_accuracy.png"><br>
+(b)<br>
 <img src="Figures/Fig4-2b_NN_model_loss.png"><br>
-**Figure 4.2.** Plots of: (a) model accuracy and (b) model loss corresponding to the NN model.
+**Figure 4.2.** Plots of: (a) model accuracy and (b) model loss corresponding to the NN model.<br>  
 <br>
 
-Below demonstrates the use of the optimized CNN model for predicting object in an unlabeled image.
+Below demonstrates the use of the optimized CNN model for predicting object in an unlabeled image.<br>
 
 ```{}
 import cv2
@@ -206,10 +210,11 @@ Please refer to **Appendix C** for details.<br>
 - Using the generated csv file, machine learning and deep learning models are generated.
 - The machine learning model is implemented by extracting image features using HOG and correlating the features to labels using support vector machine (SVM) model.
 - A simple NN model is assessed.
-- A more sophistocated NN model extracts image features using a convolutional layer and correlates the image features to labels using a neural network (NN) model. This is known as a convolutional neural network (CNN) model.
+- A more sophisticated NN model extracts image features using a convolutional layer and correlates the image features to labels using a neural network (NN) model. This is known as a convolutional neural network (CNN) model.
 - The generated models with the highest accuracy are saved into files.
 - The accuracy of CNN is in par with HOG-SVM.
-- Next, I will consider an even more sophistocated  model than CNN (i.e., a pretrained model).
+- The CNN model may be further optimized using the built-in GridSearchCV class in scikitlearn, but it is not explored in this work. Some parameters that may be varies include the dropout rate, learning rate, and number of epochs. During the epoch runs, ModelCheckpoint can be used (as demonstrated in **Appendix C**) to select weights that give the best accuracy. 
+- Instead, in the final report I will consider an even more sophisticated  model than CNN (i.e., a pretrained VGG model).
 - I will then combine the pretrained CNN model with object detection to label objects in an arbitrary image.
 <br>
 <br>
