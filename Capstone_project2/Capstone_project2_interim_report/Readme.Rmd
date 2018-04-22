@@ -212,7 +212,7 @@ Please refer to **Appendix C** for details.<br>
 - A simple NN model is assessed.
 - A more sophisticated NN model extracts image features using a convolutional layer and correlates the image features to labels using a neural network (NN) model. This is known as a convolutional neural network (CNN) model.
 - The generated models with the highest accuracy are saved into files.
-- The accuracy of CNN is in par with HOG-SVM.
+- The accuracy of CNN is in par with HOG-SVM (i.e., 96% for both).
 - The CNN model may be further optimized using the built-in GridSearchCV class in scikitlearn, but it is not explored in this work. Some parameters that may be varies include the dropout rate, learning rate, and number of epochs. During the epoch runs, ModelCheckpoint can be used (as demonstrated in **Appendix C**) to select weights that give the best accuracy. 
 - Instead, in the final report I will consider an even more sophisticated  model than CNN (i.e., a pretrained VGG model).
 - I will then combine the pretrained CNN model with object detection to label objects in an arbitrary image.
@@ -233,7 +233,6 @@ Here, the image datasets generated in **Appendix A** (Data/combined.csv) are fit
 **Appendix D. Dependent Files**<br>
 
 - Data folder <br>
-
   -spoon.csv  
   -fork.csv  
   -floss.csv  
