@@ -268,7 +268,7 @@ pd.value_counts(df_objects.Name)
 - HOG/SVM and CNN model yield an accuracy of 96%. A simple NN model yields an accuracy of only 90%.
 - The CNN model may be further optimized using the built-in GridSearchCV class in scikitlearn, but it is not explored in this work. Some parameters that may be varied include the dropout rate, learning rate, and number of epochs. During the epoch runs, ModelCheckpoint can be used (as demonstrated in **Appendix C**) to select weights that give the best accuracy. 
 - Instead, I have considered an even more sophisticated model than CNN (i.e., a pretrained VGG16 model). An accuracy of 100% is achieved using the trained VGG16 model.
-- Future work may include object detection/object recognition froma real-time video using a more sophisticated object detection algorithms, such as you only look once (YOLO) and single shot detection (SSD). 
+- Future work may include object detection/object recognition from a real-time video using a more sophisticated object detection algorithms, such as you only look once (YOLO) and single shot detection (SSD). 
 
 <br>
 <br>
