@@ -5,6 +5,13 @@ date: "April 22, 2018"
 output: html_document
 ---
 
+Abstract  
+<p style="text-align:justify">
+Without a robust inventory management system in place, it is easy for items to be misplaced, mislabeled, or even stolen. This, in turns, will result in financial losses in a business. I propose to use machine learning and deep learning models to automate and eliminate errors in keeping track of inventory. The proposed system requires two main components to be developed, object detection and object recognition. Three approaches to object recognition are explored in this work: (1) a combination of histogram oriented gradient (HOG) and support vector machine (SVM), (2) a simple neural network (NN) and convolutional neural network (CNN), and (3) a pretrained VGG16 model. The pretrained VGG16 model yields a 100% accuracy. Using a combination of the VGG16 model with contours detection, I demonstrate that objects in an image can be automatically detected and labeled. The results are summarized into pandas DataFrame and saved as a csv file.  
+</p>
+<br>
+
+
 ***
 
 #### Table of contents <br>  
@@ -26,11 +33,6 @@ Abstract
 **Appendix F. Dependent Files**<br>
 
 ***
-<br>
-
-Abstract <br>   
-Without a robust inventory management system in place, it is easy for items to be misplaced, mislabeled, or even stolen. This, in turns, will result in financial losses in a business. I propose to use machine learning and deep learning models to automate and eliminate errors in keeping track of inventory. The proposed system requires two main components to be developed, object detection and object recognition. Three approaches to object recognition are explored in this work: (1) a combination of histogram oriented gradient (HOG) and support vector machine (SVM), (2) a simple neural network (NN) and convolutional neural network (CNN), and (3) a pretrained VGG16 model. The pretrained VGG16 model yields a 100% accuracy. Using a combination of the VGG16 model with contours detection, I demonstrate that objects in an image can be automatically detected and labeled. The results are summarized into pandas DataFrame and saved as a csv file.  
-
 <br>
 
 #### 1. Introduction <br>  
