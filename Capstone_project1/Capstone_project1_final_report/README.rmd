@@ -1,11 +1,14 @@
 ---
-title: "Capstone Project 1: IR spectral analysis of organic compounds via a machine learning approach"
+title: "Capstone Project 1: IR Spectral Analysis of Organic Compounds via a Machine Learning Approach"
 author: "Ray Gunawidjaja"
 date: "March 25, 2018"
 output: html_document
 ---
 
-
+Abstract  
+<p align="justify">
+Organic compounds can be uniquely identified using an infrared spectroscopy. An infrared spectrum can be produced using a portable system that consists of an infrared light source and an infrared detector. However, intrepreting an infrared spectrum for a mixture of compounds is not straightforward. In this work, I attempt to use machine learning algorithms to correlate organic compounds spectral features with chemical functional groups.       
+</p>
 
 ***
 
